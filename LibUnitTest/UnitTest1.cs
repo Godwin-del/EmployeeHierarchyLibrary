@@ -27,7 +27,7 @@ namespace LibUnitTest
         {
             var Employee3_SalaryTest = AppDomain.CurrentDomain.BaseDirectory + "\\TestFile/CsvFile.txt";
             Employees.Emloyeelib emloyeelib = new(Employee3_SalaryTest);
-            long Salary = emloyeelib.ManagerSalaryBudget("Employee2");
+            long Salary = emloyeelib.ManagerSalaryBudget("Employee3");
             Assert.AreEqual(Salary, 500, Salary);
         }
         //. One employee does not report to more than one manager
